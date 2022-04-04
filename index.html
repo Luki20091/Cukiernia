@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head onload="IndexLoad()">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PanBabeczka.pl | Strona Główna</title>
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.png" id="favicon">
+    <link rel="stylesheet" type="text/css" href="assets/styles/index.css">
+    <link rel="stylesheet" type="text/css" href="assets/styles/media.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lobster&family=Secular+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kalam&display=swap" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="http://code.jquery.com/jquery-migrate-1.1.0.js"></script>
+    <script src="assets/scripts/index.js"></script>
+    <script src="assets/scripts/load.js"></script>
+    <script src="assets/scripts/onselect.js"></script>
+
+</head>
+
+
+    <body onload="IndexLoad()">
+        
+        
+        
+        
+
+
+        <div id="body-in-all">
+            <div id="load">
+                <div class="lds"><div></div><div></div><div></div></div>
+            </div>
+            <video autoplay muted loop id="bgvideo">
+                <source src="assets/videos/indexbg.mp4" type="video/mp4">
+            </video>
+            <div id="wrapper">
+                <div id="header" class="load2-animation-header load2-animation2-header">
+                    <div id="header-cz1">
+                        <a onClick="activeHome(); openHome();" id="logo"><img class="icon-menu1" id="img-logo" src="assets/images/logo-white-bold.png"><img class="icon-menu2" id="img-logo" src="assets/images/logo-gold-bold.png"></a>
+                    </div>
+                    <div id="header-cz2">
+                        <ol class="ol">
+                            <li><a onClick="activeHome(); openHome(); " class="header-links active" id="home-a"><img class="icon-menu1" src="assets/icons/home.svg"><img class="icon-menu2" src="assets/icons/home2.svg">Strona Główna</a></li>
+                            <li>
+                                <a onClick="activeOferta(); openOferta();" class="header-links" id="oferta-a"><img class="icon-menu1" src="assets/icons/oferta.svg"><img class="icon-menu2" src="assets/icons/oferta2.svg">Oferta<p class="right">▶</p><p class="down">◢</p></a>
+                                <ul class="ul">
+                                    <li><a onClick="activeCiasta(); openCiasta();" class="header-links" id="ciasta-a"><img class="icon-menu1" src="assets/icons/ciasta.svg"><img class="icon-menu2" src="assets/icons/ciasta2.svg">Ciasta</a>
+                                    <li><a onClick="activeCiastka(); openCiastka();" class="header-links" id="ciastka-a"><img class="icon-menu1" src="assets/icons/ciastka.svg"><img class="icon-menu2" src="assets/icons/ciastka2.svg">Ciastka</a>
+                                    <li><a onClick="activeTorty(); openTorty();" class="header-links" id="torty-a"><img class="icon-menu1" src="assets/icons/torty.svg"><img class="icon-menu2" src="assets/icons/torty2.svg">Torty</a>
+                                    <li><a onClick="activeSlodycze(); openSlodycze();" class="header-links" id="slodycze-a"><img class="icon-menu1" src="assets/icons/slodycze.svg"><img class="icon-menu2" src="assets/icons/slodycze2.svg">Słodycze</a>
+                                    <li><a onClick="activeInne(); openInne();" class="header-links" id="inne-a"><img class="icon-menu1" src="assets/icons/inne.svg"><img class="icon-menu2" src="assets/icons/inne2.svg">Inne</a>
+                                </ul>
+                            </li>
+                            <li>
+                                <a onClick="activeImprezy(); openImprezy();" class="header-links" id="imprezy-a"><img class="icon-menu1" src="assets/icons/imprezy.svg"><img class="icon-menu2" src="assets/icons/imprezy2.svg">Imprezy<p class="right">▶</p><p class="down">◢</p></a>
+                                <ul>
+                                    <li><a onClick="activeChrzty(); openChrzty();" class="header-links" id="chrzty-a"><img class="icon-menu1" src="assets/icons/chrzty.svg"><img class="icon-menu2" src="assets/icons/chrzty2.svg">Chrzty</a>
+                                    <li><a onClick="activeKomunie(); openKomunie();" class="header-links" id="komunie-a"><img class="icon-menu1" src="assets/icons/komunie.svg"><img class="icon-menu2" src="assets/icons/komunie2.svg">Komunie</a>
+                                    <li><a onClick="activeWesela(); openWesela();" class="header-links" id="wesela-a"><img class="icon-menu1" src="assets/icons/wesela.svg"><img class="icon-menu2" src="assets/icons/wesela2.svg">Wesela</a>
+                                    <li><a onClick="activeStypy(); openStypy();" class="header-links" id="stypy-a"><img class="icon-menu1" src="assets/icons/stypy.svg"><img class="icon-menu2" src="assets/icons/stypy2.svg">Stypy</a>
+                                    <li><a onClick="activeUrodziny(); openUrodziny();" class="header-links" id="urodziny-a"><img class="icon-menu1" src="assets/icons/urodziny.svg"><img class="icon-menu2" src="assets/icons/urodziny2.svg">Urodziny</a>
+                                </ul>
+                            </li>
+                            <li><a onClick="activeOsiagniecia(); openOsiagniecia();" class="header-links" id="osiagniecia-a"><img class="icon-menu1" src="assets/icons/osiagniecia.svg"><img class="icon-menu2" src="assets/icons/osiagniecia2.svg">Osiągnięcia</a></li>
+                            <li><a onClick="activeGaleria(); openGaleria();" class="header-links" id="galeria-a"><img class="icon-menu1" src="assets/icons/galeria.svg"><img class="icon-menu2" src="assets/icons/galeria2.svg">Galeria</a></li>
+                            <li><a onClick="activeKontakt(); openKontakt();" class="header-links" id="kontakt-a"><img class="icon-menu1" src="assets/icons/kontakt.svg"><img class="icon-menu2" src="assets/icons/kontakt2.svg">Kontakt</a></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="logo-center" onClick="activeHome(); openHome();" class="load2-animation-center load2-animation2-center logo-center2 logo-center3">
+                <img id="center-logo" class="icon-menu1" src="assets/images/logo-center.png"><img id="center-logo" class="icon-menu2" src="assets/images/logo-center-gold.png">
+                <a onClick="activeHome(); openHome();" id="center-link">Cukiernia - PanBabeczka.pl</a>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div id="oferta" class="content">
+                <div class="content-in">
+                    <img src="assets/icons/oferta.svg">
+                    <p>W naszej cukierni znajdą Państwo tylko wyroby najwyższej <br>jakości. Dbamy tak samo o smak, jak i o wygląd wypieków.</p>
+                    <p>Cukiernia PanBabeczka przyciągają zapachem i wyjątkowo <br>bogatym wyborem słodkości. Wykorzystując tradycyjne <br>rodzinne receptury i metody pieczenia tworzymy magicznie <br>pyszne słodkości, które przyciągają smakiem i zapachem.</p>
+                    <p>Nasze produkty: <br>
+                        ◦ ciasta <br>
+                        ◦ ciastka <br>
+                        ◦ torty  <br>
+                        ◦ słodycze <br>
+                        ◦ wiele więcej... </p>
+                    <p>W naszych cukierniach wypiekamy wyroby oparte o tradycyjne, <br>regionalne receptury. Ich domowy smak znany nam doskonale <br>z babcinych stołów, pozostaje ciągle z nami. Przywiązani do <br>tradycji patrzymy przed siebie wzbogacając swoją słodką ofertę.</p>
+                    <p>Do najpopularniejszych wypieków należą np.: szarlotki, desery, ciasta <br>kruche, bezy czekoladowe, delicji, ciast owocowych i mnóstwo innych.</p>
+                </div>
+            </div>
+
+            <div id="ciasta" class="content">
+                <div class="content-in">
+                    <img src="assets/icons/ciasta.svg">
+                    <p>Nasza cukiernia słynie z wypieku tradycyjnych ciast, które <br>od lat królują na naszych stołach. Makowce, pierniki, serniki, szarlotki i inne smakołyki - ich przygotowywanie naprawdę <br>opanowaliśmy do perfekcji. Bazujemy na sprawdzonych, dopracowywanych przez lata recepturach.</p>
+                    <p>Zawsze na bazie świeżych, najwyższej jakości składników, <br>bez konserwantów i sztucznych barwników. Oczywiście <br>nie brakuje i propozycji całkiem nowoczesnych, finezyjnych.</p>
+                    <p>W naszej cukierni znajdą Państwo przeróżne propozycje ciast: <br>
+                        ◦ kruchych <br>
+                        ◦ drożdżowych <br>
+                        ◦ francuskich  <br>
+                        ◦ z owocami <br>
+                        ◦ z kremem <br>
+                        ◦ wiele więcej... </p>
+                    <p>Nie sposób ich wszystkich wymienić. Dokładamy wszelkich starań, <br>by nie tylko doskonale smakowały, lecz także pobudzały apetyt samym wyglądem. Wiele przepisów na ciasta opieramy na wybitnych, polskich <br>tradycjach przekazywanych z pokolenia na pokolenie. </p>
+                </div>
+            </div>
+
+            <div id="ciastka" class="content">
+                <div class="content-in">
+                    <img src="assets/icons/ciastka.svg">
+                    <p>Odwiedzając Cukiernie PanBabeczka mają Państwo <br>możliwość wyboru wielu rodzajów ciastek wypiekanych <br>w oparciu o tradycyjne i sprawdzone receptury. Podstawą naszych słodkości są odpowiednio dobrane, najlepsze półprodukty od lokalnych dostawców. Ciekawe połączenia smaków oraz ręczne wykonanie sprawia, że słodkości <br>z naszych cukierni nie mają sobie równych.</p>
+                    <p>Któż z nas nie lubi kruchych ciasteczek, które doskonale komponują się <br>z kawą? Świetnie spełniają one rolę samodzielnej przekąski oraz dodatków <br>do wielu dań. Jednak, aby miały one odpowiednio wyważony smak i aromat, muszą być wyrabiane z wyselekcjonowanych, świeżych składników oraz według tradycyjnych receptur. I takie właśnie ciasteczka zakupisz w naszej cukierni.</p>
+                    <p>Asortyment jest bardzo szeroki i obejmuje między innymi: <br>
+                        ◦ ciastka kruche mleczne <br>
+                        ◦ ciastka kruche z marmoladką <br>
+                        ◦ ciastka czekoladowe <br>
+                        ◦ ciastka owsiane <br>
+                        ◦ wiele więcej... </p>
+                    <p>Serdecznie zapraszamy do wypróbowania naszych wypieków. Mamy nadzieję, że spełnią one Twoje wymagania i zostaniesz stałym bywalcem cukierni PanBabeczka!</p>
+                </div>
+            </div>
+
+            <div id="torty" class="content">
+                <div class="content-in">
+                    <img src="assets/icons/torty.svg">
+                    <p>Przygotowujemy torty tak pyszne, że nie można im się oprzeć. Nasze wypieki zachwycają smakiem oraz najróżniejszą formą. Pyszne torty będą uzupełnieniem rodzinnych spotkań lub uroczystości. Łącząc delikatny biszkopt z wyrazistym kremem nasi cukiernicy tworzą ciasta wyjątkowe. Z naszymi tortami przyjęcie będzie z pewnością udane, a goście zachwyceni.</p>
+                    <p>Świętuj cudowne chwile przy słodkościach z Cukierni Magosz. <br>Proponujemy szeroki wybór smaków i form, które oczarują każdego. <br>Z przyjemnością stworzymy słodkie dzieła sztuki, które będą <br>częścią wyjątkowego rodzinnego lub firmowego przyjęcia.</p>
+                    <p>Nasze torty to zawsze odpowiednio skomponowane wypieki. Sam decydujesz <br>o wysokości konstrukcji, ilości pięter, ich układzie, dekoracjach i smakach. <br>Wykonamy dla Ciebie tradycyjny tort, ale też zrealizujemy indywidualny projekt.</p>
+                    <p>Dokładamy wszelkich starań, aby nasza obsługa była w pełni komfortowa <br>i satysfakcjonująca. Dlatego wszystkie torty okolicznościowe zamówisz zarówno na miejscu - w lokalu, telefonicznie, jak i online. Zamówienia internetowe <br>to bezpieczny i niezwykle wygodny sposób, dzięki któremu skomponujesz <br>i zakupisz swój wypiek bez wychodzenia z domu!</p>
+                </div>
+            </div>
+
+            <div id="slodycze" class="content">
+                <div class="content-in">
+                    <img src="assets/icons/slodycze.svg">
+                    <p>Zastawione pysznymi słodkościami stoły to świetny pomysł <br>na firmowe eventy i duże uroczystości rodzinne lub spotkania <br>w gronie znajomych. Na słodkich stołach mogą znaleźć się m.in. tort, ciasta, ciasteczka, babeczki, cukierki, praliny, lizaki <br>i inne dowolnie wybrane pyszności. Cały asortyment jest <br>przystosowany do charakteru przyjęcia oraz danego motywu.</p>
+                    <p>Zaskocz swoich gości wyjątkowymi pysznościami. Przygotujemy dla ciebie specjalne słodkie stoły zastawione najsmakowitszymi wypiekami i słodkościami. Jest to świetny pomysł na firmowe eventy i duże uroczystości rodzinne <br>lub spotkania w gronie znajomych.</p>
+                    <p>Słodycze mają długie okresy trwałości 2- 3 miesiące - oprócz muffinów <br>i makaroników i doskonale nadają się do wysyłki kurierem.</p>
+                    <p>Na każdym ciastku możemy nadrukować jadalnymi tuszami dowolną grafikę, logo lub zdjęcie. Pełnokolorowy cyfrowy nadruk nanosimy bezpośrednio na ciastko lub na polewę cukrową. Kolory czasem mogą być przekłamane,bo tusze są jadalne a podłoże do druku niestandardowe.</p>
+                    <p>Wszystkie nasze słodycze są standardowo zapakowane w woreczek celofanowy ze złotym klipsem, za dopłatą zawiążemy satynową wstążeczkę lub bilecik.</p>
+                </div>
+            </div>
+
+            <div id="inne" class="content">
+                <div class="content-in">
+                    <img src="assets/icons/inne.svg">
+                    <p>W cukierni PanBabeczka nie znajdziesz samych ciast, <br>tortów, czy pieczywa - znajdziesz również wiele innych <br>wyśmienitych produktów jakimi dysponujemy.</p>
+                    <p>
+                        Coraz większą popularność zyskują m.in.: <br>
+                        ◦ Lody <br>
+                        ◦ Kawy <br>
+                        ◦ Konfitury <br>
+                        ◦ wiele więcej...
+                    </p>
+                    <p>Lody były pierwszym wyrobem sprzedawanym przez Cukiernię zaraz po <br>ciastach i pieczywie, można więc powiedzieć, że to one zapoczątkowały <br>jej istnienie. Początkowo produkowane w trzech smakach: śmietankowym <br>i truskawkowym, były i są prawdziwym hitem. Od 2005 roku cieszą się <br>niesłabnącą popularnością i mają mnóstwo wielbicieli. Trudno się dziwić <br>- ich smak jest naprawdę niepowtarzalny.</p>
+                    <p>Coraz większa popularność firmowych kawiarni zainspirowała nas w 2007r. <br>do kolejnej, przełomowej idei: świeża, wyśmienita, aromatyczna kawa, palona <br>metodą tradycyjną we własnej palarni. Tak kolejno powstały oddziały naszej <br>kawiarni w całej polsce PanBabeczka Caffè.</p>
+                    <p>Konfitury sięgają swej tradycji 1989 roku, wtedy dopiero zaczynaliśmy, <br>a nasza cukiernia pozyskiwała swoich pierwszych klientów.</p>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div id="imprezy" class="content">
+                <div class="content-in">
+                    <img src="assets/icons/imprezy.svg">
+                    <p>W poszukiwaniu idealnego wypieku na specjalną uroczystość powinieneś poznać torty artystyczne, które&nbspprzygotowujemy w&nbspCukierni PanBabeczka. Oferujemy wyborne słodkości wykonane na&nbspbazie biszkoptów i&nbspsmakowitych kremów, ozdabiane fantazyjnymi dekoracjami. Cena tych jakże <br>wyjątkowych deserów jest przystępna.</p>
+                    <p>
+                        Doskonale nadają się na wiele okazji, na przykład: <br>
+                        ◦ Wesela <br>
+                        ◦ Komunie <br>
+                        ◦ Urodziny <br>
+                        ◦ wiele więcej...
+                    </p>
+                    <p>Proponujemy Ci torty artystyczne z darmową dostawą do domu, <br>których wyborny smak zadowoli nawet najbardziej wybrednych gości. <br>Nasza cukiernia ma ponad 100 oddziałów w całym kraju, dlatego możesz cieszyć się tymi wspaniałymi wyrobami bez względu na miejsce zamieszkania.</p>
+                    <p>Za warstwę artystyczną naszych wypieków odpowiedzialna jest m.in. <br>Jowita Woszczyńska, Mistrzyni Świata z 2019 roku w dekorowaniu tortów, <br>która pokonała pozostałych 16 uczestników konkursu. Jej prace to prawdziwe dzieła sztuki cukierniczej, dlatego polecamy je również w przypadku <br>organizacji bardzo prestiżowego wydarzenia.</p>
+                </div>
+            </div>
+
+            <div id="chrzty" class="content">
+                <div class="content-in">
+                    <img src="assets/icons/chrzty.svg">
+                    <p>Celebrowanie pierwszego sakramentu Twojego dziecka będzie na&nbsppewno&nbspudane, jeśli&nbspzdecydujesz się na tort na chrzest święty, w wersji dla chłopca lub dziewczynki. Przygotujemy&nbspdla&nbspCiebie&nbspsmakowity wypiek na zamówienie, przeznaczony na to wyjątkowe wydarzenie, czyli&nbspchrzciny. Dzięki wieloletniemu doświadczeniu w branży cukierniczej stworzymy wyśmienity produkt, którego cena na pewno pozytywnie Cię zaskoczy.</p>
+                    <p>Nasze torty dla chłopców i dziewczynek przystępujących do chrztu świętego&nbspwykonujemy&nbspna&nbsppodstawie autorskich receptur, które gwarantują niesamowite&nbspdoznania&nbspsmakowe. Składają się m.in. z niezwykle puszystego biszkoptu, przekładanego delikatnym kremem z dodatkami i jest zwieńczony piękną dekoracją. </p>
+                    <p>
+                        Możesz je zamówić z dostawą do domu - do dyspozycji masz wiele wyśmienitych smaków, takich jak: <br>
+                        ◦ wiedeński <br>
+                        ◦ hiszpański orzechowy <br>
+                        ◦ truskawkowy <br>
+                        ◦ pralinowy <br>
+                        ◦ wiele więcej...
+                    </p>
+                    <p>Jeśli chcesz, aby nasz tort umilił uroczystość chrzcin Twojego dziecka, zapraszamy do skorzystania z naszej oferty! Cukiernia PanBabeczka ma oddziały w całym kraju - znajdziesz nas w wielu dużych miastach.</p>
+                </div>
+            </div>
+
+            <div id="komunie" class="content">
+                <div class="content-in">
+                    <img src="assets/icons/komunie.svg">
+                    <p>Na zamówienie przygotujemy okrągły tort na komunię dla&nbspdziewczynki i chłopca - za jego przygotowanie będą odpowiedzialni najlepsi cukiernicy. Smakowity, wypełniony gęstym i puszystym kremem to niezbędny element każdego przyjęcia z okazji przystąpienia do tego sakramentu. Oferujemy&nbspwiele interesujących słodkości, których cena zawsze&nbsppozytywnie zaskakuje. Produkty te wyróżniają się&nbsppięknymi dekoracjami oraz wybornym smakiem.</p>
+                    <p>
+                        Przygotowujemy torty w wielu wersjach, np.: <br>
+                        ◦ dekoracyjnej na stelażu <br>
+                        ◦ prostokątnej <br>
+                        ◦ okrągłej <br>
+                        ◦ w kształcie książki <br>
+                        ◦ wiele więcej...
+                    </p>
+                    <p>Nasza Cukiernia PanBabeczka ma zasięg ogólnokrajowy, dlatego nasze punkty sprzedaży znajdziesz w m.in. Bydgoszczy, Poznaniu, Wrocławiu czy Białymstoku. W każdym z nich możesz złożyć zamówienie na torty komunijne dla dzieci, z odbiorem własnym lub z dostawą.</p>
+                    <p>Słodkości na tę okazję zawsze ozdabiamy pięknymi dekoracjami nawiązującymi do tematyki uroczystości, które są wykonane z jadalnych składników. Na życzenie dołożymy także np. figurkę z białej czekolady, przedstawiającą chłopca lub dziewczynkę.</p>
+                </div>
+            </div>
+
+            <div id="wesela" class="content">
+                <div class="content-in">
+                    <img src="assets/icons/wesela.svg">
+                    <p>Jeśli chcesz, aby Twoje przyjęcie ślubne było udane, sprawdź&nbspnasze torty weselne na stelażu i wybierz idealną opcję&nbspna&nbsptę&nbspważna&nbspuroczystość. Cukiernia PanBabeczka oferuje&nbspprodukty o wyśmienitym smaku i pięknym wyglądzie, których&nbspcena jest zawsze atrakcyjna. Mamy doświadczenie w&nbspprzyrządzaniu wybornych słodkości na specjalne okazje.</p>
+                    <p>Sprzedajemy je m.in. w: <br>
+                        ◦ Warszawie <br>
+                        ◦ Białymstoku <br>
+                        ◦ Bydgoszczy <br>
+                        ◦ Kielcach <br>
+                        ◦ wiele więcej...
+                    </p>
+                    <p>Przygotowujemy wyśmienite wypieki na zamówienie, korzystając z tradycyjnych, sekretnych receptur. Nasi uzdolnieni cukiernicy wykonają dla Ciebie wyborny tort, który sprawdzi się zarówno na wielką fetę weselną, jak i skromną kolację ślubną. W przypadku tej pierwszej opcji polecamy szczególnie wariant piętrowy ze stelażem, który prezentuje się bardzo okazale.</p>
+                    <p>Nasze słodkości to nie tylko doskonały smak, ale też wygląd, gdyż <br>są ozdobione pięknymi dekoracjami, podkreślającymi wagę uroczystości. <br>Cukiernia PanBabeczka ma w swojej ofercie m.in. tort rustykalny, <br>który cieszy się ostatnio dużą popularnością.</p>
+                    <p>Wszystkie torty weselne możesz zamówić z dostawą we wskazane miejsce.</p>
+                </div>
+            </div>
+
+            <div id="stypy" class="content">
+                <div class="content-in">
+                    <img src="assets/icons/stypy.svg">
+                    <p>Zdaniem wielu naszych klientów oferujemy najlepsze torty na&nbspostatnie pożegnanie nie tylko w całej Polsce i nie tylko.</p>
+                    <p>Każde święta, czy różnego rodzaju okazje mają swoje okolicznościowe potrawy, czy ciasta. Nie jest tutaj wyjątkiem&nbsprównież i uroczystość pogrzebowa. W wielu kulturach&nbsppo&nbsppogrzebie organizuje się stypę i zaprasza uczestników&nbspna&nbsppoczęstunek.</p>
+                    <p>Pyszne ciasta przygotowywane przez Naszych doświadczonych cukierników&nbsppozwolą&nbspCi polepszyć każde przyjęcia nawet stypy. <br>Nasi cukiernicy doskonale ujmują w swoich dziełach powagę, <br>godność oraz uszanowanie.</p>
+                    <p>Cena tortu na stypę uzależniona jest od rozmiaru tortu oraz indywidualnych preferencji w obszarze jego dekoracji. Jesteśmy w stanie wykonać dla Państwa dosłownie każdy tort na stypę na zamówienie. </p>
+                    <p>Niemniej jednak w naszej standardowej ofercie mogą Państwo zakupić tort na stypę bezpośrednio w naszej cukierni.</p>
+                </div>
+            </div>
+
+            <div id="urodziny" class="content">
+                <div class="content-in">
+                    <img src="assets/icons/urodziny.svg">
+                    <p>Przygotowując przyjęcie dla chłopców czy dziewczynek, <br>musisz sprawdzić okolicznościowe torty urodzinowe <br>dla dzieci, które przygotowujemy w Cukierni PanBabeczka. <br>Zapewniamy słodkości wyróżniające się wyśmienitym smakiem <br>i dekoracjami, dlatego będą odpowiednie dla najmłodszych łasuchów. To doskonała opcja na przyjęcie - produkt ten <br>na pewno zachwyci wszystkich uczestników spotkania! </p>
+                    <p>Przygotujemy dla Ciebie wyborne słodkości na zamówienie, które możesz odebrać w jednym z punktów sprzedaży lub <br>kupić z dostawą pod wskazany adres.</p>
+                    <p>
+                        Cukiernia PanBabeczka to doskonały smak, wysoka jakość i duży wybór. <br>Torty dziecięce dostępne są w wielu interesujących wariantach, które przypadną do gustu nawet małym niejadkom. W przypadku wypieków dla najmłodszych stawiamy na kolorowe dekoracje, nawiązujące do popularnych bajek, takich jak: <br>
+                        ◦ Hello Kitty <br>
+                        ◦ Świnka Peppa <br>
+                        ◦ Smerfy <br>
+                        ◦ Myszka Miki <br>
+                        ◦ wiele więcej...
+                    </p>
+                    <p>Okolicznościowy tort dla dziecka, zarówno chłopca, jak i dziewczynki wykonujemy z masy cukrowej lub dekoracji śmietanowej, puszystego <br>biszkoptu oraz kremu z dodatkiem owoców, orzechów czy czekolady.</p>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div id="osiagniecia" class="content">
+                <div class="content-in">
+                    <img src="assets/icons/osiagniecia.svg">
+                    <p>
+                        2021r. <br>
+                        I miejsce - Best World Cake Designers - Jowita Wójcik
+                    </p>
+                    <p>
+                        2020r. <br>
+                        III miejsce - Mistrz cukiernictwa - Mariusz Ignaszek
+                    </p>
+                    <p>
+                        2019r. <br>
+                        VI miejsce - Mistrzostwa Polski Barista - Anna Berad
+                    </p>
+                    <p>
+                        2017r. <br>
+                        III miejsce - Best World Cake Designers - Jowita Wójcik
+                    </p>
+                    <p>
+                        2015r. <br>
+                        I miejsce - Lodowe Mistrzostwa Polski - Aleksandra Moda, Julia Kowalczyk
+                    </p>
+                    <p>
+                        2014r. <br>
+                        X miejsce - Mistrzostwa Świata Cukierników w Sao Paulo - Aleksandra Moda
+                    </p>
+                    <p>
+                        2013r. <br>
+                        Rekord Guinnessa - Największy tort weselny na świecie - 8,5m!
+                    </p>
+                    <p>
+                        2009r. <br>
+                        II miejsce - Coppa del Mondo della Gelateria - Grzegorz Nowak
+                    </p>
+                    <p>
+                        2007r. <br>
+                        I miejsce - Hit Sezonu Konkurs Lodowy - Julia Kowalczyk, Mariusz Ignaszek
+                    </p>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div id="galeria" class="content">
+                <div class="content-in">
+                    <img src="assets/icons/galeria.svg">
+                    <p>"NIEZWYKŁE TORTY, CIASTA, LODY, CZY WYPIEKI, <br>PO PROSTU WSPANIAŁE!" - skomentowała Para Młodych</p>
+                    <p>Spójrz tylko jak Nasi wybitni cukiernicy pracowali przez <br>ostatnie kilka miesięcy. Na okrągło wymyślają coś nowego, <br>zaskakując samych właścicieli, co lepsza naszych klientów.</p>
+                    <div class="gallery">
+                        <div class="gallery-row">
+                            <div class="images">
+                                <img src="assets/images/gallery-8.png">
+                                <div class="images-top">
+                                    <p>Mini tortcik czekoladowy</p>
+                                </div>
+                            </div>
+                            <div class="images">
+                                <img src="assets/images/gallery-7.png">
+                                <div class="images-top">
+                                    <p>Tort weselny z&nbspozdobami</p>
+                                </div>
+                            </div>
+                            <div class="images">
+                                <img src="assets/images/gallery-4.png">
+                                <div class="images-top">
+                                    <p>Tort komunijny z&nbspozdobami</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery-row">
+                            <div class="images">
+                                <img src="assets/images/gallery-3.png">
+                                <div class="images-top">
+                                    <p>Tort dziecięcy z&nbspozdobami</p>
+                                </div>
+                            </div>
+                            <div class="images">
+                                <img src="assets/images/gallery-9.png">
+                                <div class="images-top">
+                                    <p>Trufla migdałowa w&nbspczekoladzie</p>
+                                </div>
+                            </div>
+                            <div class="images">
+                                <img src="assets/images/gallery-6.png">
+                                <div class="images-top">
+                                    <p>Babeczka kajmakowa z&nbsporzechami</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div id="kontakt" class="content">
+                <div class="content-in">
+                    <img src="assets/icons/kontakt.svg">
+                    <p>
+                        CUKIERNIA PANBABECZKA - RADOM <br>
+                        ul. Limanowskiego 26/30 - 26-600 Radom
+                    </p>
+                    <p>
+                        Cukiernia: tel. +48 624 502 302 <br>
+                        Web Dev: tel. +48 722 367 101
+                    </p>
+                    <p>
+                        Godziny otwarcia: <br>
+                        Pon.-Pt: 08:00 - 20:00 <br>
+                        Sob.-Niedz: 10:00 - 16:00
+                    </p>
+                    <p>
+                        Znajdziesz nas w miastach:<br>
+                        #Radom #Wrocław #Warszawa #Kielce #Kraków #Lublin #Gliwice<br>#Poznań #Szczecin #Katowice #Toruń #Białystok #Łódź #Rzeszów
+                    </p>
+                    <iframe loading="lazy" src="https://maps.google.pl/maps?f=q&amp;source=s_q&amp;hl=pl&amp;geocode=&amp;q=Zesp%C3%B3%C5%82+Szk%C3%B3%C5%82+Technicznych+im.+T.+Ko%C5%9Bciuszki,+Radom&amp;aq=t&amp;sll=52.24755,21.193789&amp;sspn=4.096603,9.162598&amp;ie=UTF8&amp;hq=Zesp%C3%B3%C5%82+Szk%C3%B3%C5%82+Technicznych+im.+T.+Ko%C5%9Bciuszki,+Radom&amp;hnear=&amp;radius=15000&amp;t=m&amp;cid=6750039422334378194&amp;ll=51.407451,21.135378&amp;spn=0.018739,0.045147&amp;z=14&amp;iwloc=A&amp;output=embed" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div id="foother" class="load2-animation-foother load2-animation2-foother">
+                <div id="copyright">
+                    <p>Copyright &copy;2022 Cukiernia PanBabeczka.</p>
+                </div>
+                <div id="dev">
+                    <p>Web developer: Luki</p>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>
