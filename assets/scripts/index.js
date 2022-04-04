@@ -82,7 +82,7 @@ function openOferta() {
 
 
 
-    //zostawia home:
+    //zostawia oferta:
     document.getElementById("logo-center").classList.add("open-logo");
     document.title = ('PanBabeczka.pl | Oferta');
 

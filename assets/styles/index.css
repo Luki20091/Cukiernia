@@ -159,7 +159,7 @@ body {
 
 .open-logo {
     left: 11% !important;
-    transform: translate(-10%, -50%) !important;
+    transform: translate(-11%, -50%) !important;
     transition: var(--open-transition);
 }
 
@@ -326,12 +326,6 @@ iframe {
 }
 
 .gallery-row:first-child {
-    width: 470px;
-    height: 150px;
-    text-align: center;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
     margin-bottom: 10px;
 }
 
@@ -1268,3 +1262,6 @@ li:hover > a > .right {
 
 
 
+.gallery2 {
+    display: none;
+}

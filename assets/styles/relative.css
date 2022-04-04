@@ -1,0 +1,236 @@
+@media only screen and (max-width: 700px) {
+    #center-logo {
+        width: 230px !important;
+        height: 230px !important;
+    }
+    #center-link {
+        font-size: 20px;
+    }
+    .open-logo {
+        opacity: 0 !important;
+        left: 50% !important;
+        top: 11% !important;
+        transform: translate(-50%, -11%) !important;
+        z-index: -11 !important;
+    }
+
+
+
+
+
+    .content {
+        left: 50% !important;
+        top: 30% !important;
+        transform: translate(-50%, -30%) !important;
+        width: 370px;
+        height: 700px;
+        background-image: url("../../assets/images/content.png");
+    }
+    .visible {
+        left: 50% !important;
+        top: 50% !important;
+        transform: translate(-50%, -50%) !important;
+    }
+    .content-in {
+        width: 90% !important;
+        height: 95% !important;
+        line-height: 16px !important;
+        font-size: 13px !important;
+        display: flex !important;
+        flex-direction: column !important;
+    }
+
+
+    .p-no-br br {
+        display: none !important;
+    }
+
+    
+    .no-br {
+        display: none !important;
+    }
+
+
+
+    .content-in > img {
+        width: 80px !important;
+        height: 80px !important;
+        display: flex !important;
+        float: left !important;
+        left: 50% !important;
+        top: 10px !important;
+        transform: translate(-50%, 0) !important;
+        position: relative !important;
+        margin-top: 5px !important;
+        margin-bottom: 5px !important;
+
+    }
+
+
+
+
+
+
+
+    #imprezy > .content-in > img {
+        margin-top: 5px !important;
+    }
+
+    #kontakt > .content-in > img {
+        margin-top: 5px !important;
+    }
+
+    #inne > .content-in > img {
+        margin-top: 5px !important;
+    }
+
+    #stypy > .content-in > img {
+        margin-top: 5px !important;
+    }
+
+    #galeria > .content-in > img {
+        margin-top: 5px !important;
+    }
+
+    #ciasta > .content-in > img {
+        margin-top: 5px !important;
+    }
+
+    #ciastka > .content-in > img {
+        margin-top: 5px !important;
+    }
+
+    #oferta > .content-in > img {
+        margin-top: 5px !important;
+    }
+
+    #slodycze > .content-in > img {
+        margin-top: 5px !important;
+    }
+
+    #torty > .content-in > img {
+        margin-top: 5px !important;
+    }
+
+
+    .gallery {
+        display: none !important;
+    }
+    .gallery2 {
+        left: 50% !important;
+        top: 92% !important;
+        transform: translate(-50%, -92%) !important;
+        position: absolute !important;
+        display: block !important;
+        background-color: #000 !important;
+        text-align: center !important;
+        display: flex !important;
+        flex-direction: row !important;
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+        align-content: center !important;
+        border-radius: 20px !important;
+        width: 290px !important;
+        height: 430px !important;
+    }
+
+    .gallery-row {
+        padding-left: 10px !important;
+        width: 280px !important;
+        height: 130px !important;
+        background-color: transparent !important;
+    }
+    .gallery-row:nth-child(2) {
+        margin-bottom: 10px !important;
+    }
+
+    .images > img {
+        width: 130px !important;
+        height: 130px !important;
+    }
+
+    .images-top {
+        width: 130px !important;
+        height: 130px !important;
+    }
+
+
+    iframe {
+        width: 95% !important;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    #foother p {
+        margin: 15px 15px;
+    }
+
+
+}
+
