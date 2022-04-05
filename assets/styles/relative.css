@@ -22,7 +22,7 @@
         left: 50% !important;
         top: 30% !important;
         transform: translate(-50%, -30%) !important;
-        width: 370px;
+        width: 350px;
         height: 700px;
         background-image: url("../../assets/images/content.png");
     }
@@ -184,6 +184,48 @@
 
 
 
+    #header-cz2 {
+        display: none !important;
+    }
+
+
+    #header-cz3 {
+        display: block;
+        position: relative;
+        top: 0;
+        right: 15px;
+        margin-left: 0;
+        margin-top: -5px;
+        width: 45px;
+        height: 45px;
+        z-index: 100 !important;
+    }
+
+
+
+    .menu-items {
+        display: none;
+        width: 100% !important;
+        height: 100% !important;
+        background-color: rgba(0, 0, 0, 0.8) !important;
+        left: 50% !important;
+        top: 50% !important;
+        transform: translate(-50%, -50%) !important;
+        position: fixed !important;
+        z-index: 70 !important;
+    }
+
+
+
+    .menu-items ul {
+        left: 50% !important;
+        top: 50% !important;
+        transform: translate(-50%, -50%) !important;
+        position: fixed !important;
+        backdrop-filter: blur(0) !important;
+        list-style-type: none !important;
+        z-index: 71 !important;
+    }
 
 
 
@@ -206,6 +248,54 @@
 
 
 
+    #toggle {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: -2.5px;
+        width: 50px;
+        height: 50px;
+        z-index: 120;
+        margin: 0 !important;
+        opacity: 0;
+    }
+
+    .hamburger {
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin-left: 0;
+        margin-top: 0;
+        width: 45px;
+        height: 45px;
+        z-index: 100;
+    }
+
+    .hamburger div {
+        position: relative;
+        width: 45px;
+        height: 6px;
+        border-radius: 3px;
+        background-color: #fff;
+        margin-top: 8px;
+        transition: all 0.3s ease-in-out;
+        z-index: 100;
+    }
+
+    #toggle:checked + .hamburger .top-bun {
+        transform: rotate(-45deg);
+        margin-top: 25px;
+    }
+
+    #toggle:checked + .hamburger .bottom-bun {
+        opacity: 0;
+        transform: rotate(45deg);
+    }
+
+    #toggle:checked + .hamburger .meat {
+        transform: rotate(45deg);
+        margin-top: -7px;
+    }
 
 
 
@@ -213,11 +303,9 @@
 
 
 
-
-
-
-
-
+    #toggle:checked > .menu-items {
+        display: block !important;
+    }
 
 
 
@@ -228,7 +316,8 @@
 
 
     #foother p {
-        margin: 15px 15px;
+        margin: 12px 12px;
+        font-size: 8px;
     }
 
 
