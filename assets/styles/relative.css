@@ -25,8 +25,8 @@
         top: 30% !important;
         transform: translate(-50%, -30%) !important;
         width: 350px;
-        height: 600px;
-        background-image: url("../../assets/images/content.png");
+        height: 580px;
+        background-image: url("../../assets/images/content2.png");
     }
     .visible {
         left: 50% !important;
@@ -63,7 +63,7 @@
         top: 10px !important;
         transform: translate(-50%, 0) !important;
         position: relative !important;
-        margin-top: 5px !important;
+        margin-top: -5px !important;
         margin-bottom: 5px !important;
 
     }
@@ -75,47 +75,47 @@
 
 
     #imprezy > .content-in > img {
-        margin-top: 5px !important;
+        margin-top: -5px !important;
     }
 
     #kontakt > .content-in > img {
-        margin-top: 5px !important;
+        margin-top: -5px !important;
     }
 
     #inne > .content-in > img {
-        margin-top: 5px !important;
+        margin-top: -5px !important;
     }
 
     #stypy > .content-in > img {
-        margin-top: 5px !important;
+        margin-top: -5px !important;
     }
 
     #galeria > .content-in > img {
-        margin-top: 5px !important;
+        margin-top: -5px !important;
     }
 
     #ciasta > .content-in > img {
-        margin-top: 5px !important;
+        margin-top: -5px !important;
     }
 
     #ciastka > .content-in > img {
-        margin-top: 5px !important;
+        margin-top: -5px !important;
     }
 
     #oferta > .content-in > img {
-        margin-top: 5px !important;
+        margin-top: -5px !important;
     }
 
     #slodycze > .content-in > img {
-        margin-top: 5px !important;
+        margin-top: -5px !important;
     }
 
     #torty > .content-in > img {
-        margin-top: 5px !important;
+        margin-top: -5px !important;
     }
 
     #osiagniecia > .content-in > img {
-        margin-top: 5px !important;
+        margin-top: -5px !important;
     }
 
 
