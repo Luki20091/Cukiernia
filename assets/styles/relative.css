@@ -25,7 +25,7 @@
         top: 30% !important;
         transform: translate(-50%, -30%) !important;
         width: 350px;
-        height: 580px;
+        height: 570px;
         background-image: url("../../assets/images/content2.png");
     }
     .visible {
@@ -351,7 +351,7 @@
 
 
     #foother p {
-        margin: 12px 12px;
+        margin: 8px 12px;
         font-size: 8px;
     }
 
