@@ -231,6 +231,7 @@
         width: 45px;
         height: 45px;
         z-index: 100 !important;
+        opacity: 0.8;
     }
 
 
